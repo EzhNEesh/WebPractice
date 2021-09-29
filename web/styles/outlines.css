@@ -1,0 +1,67 @@
+
+
+body {
+    background-image: url("/images/background.png");
+}
+
+header.Header1 {
+    height: 104px;
+}
+
+.Logo {
+    float: left;
+    height: 104px;
+}
+.Quote {
+    float: left;
+    margin: 0px 0px 0px 3px;
+    background-image: url("/images/quoteback.png");
+    height: 104px;
+    width: 500px;
+    font-style: italic;
+    font-size: 150%;
+    text-align: center;
+}
+
+.Menu {
+    float: right;
+    font-size: 150%;
+}
+
+.Content {
+    margin: 10px 0px 0px 0px;
+    height: 570px;
+    background-image: url("/images/contentback.png");
+}
+
+.Pseudographics {
+    float: left;
+    margin: 0px 0px 0px 0px;
+    height: 570px;
+    width: 450px;
+    background: black;
+    font-size: 10px;
+    color: white;
+}
+
+.Snippet {
+    float: left;
+    margin: 0px 0px 0px 0px;
+    background: white;
+    width: 450px;
+}
+
+.TagColor {
+    color: orange;
+}
+
+.Footer1 {
+    flex-shrink: 0;
+    background-image: url("/images/contactsback.png");
+    height: 70px;
+}
+
+.Footer1-text {
+    font-size: 20px;
+    text-align: center;
+}
