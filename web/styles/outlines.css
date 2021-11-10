@@ -138,6 +138,7 @@ body {
 }
 
 .footer-info .footer-info__contacts {
+    padding: 5px 0;
     font-size: 20px;
     text-align: center;
     font-family: Serif;
