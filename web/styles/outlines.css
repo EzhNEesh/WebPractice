@@ -1,3 +1,11 @@
+@font-face {
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: 400;
+    src: local("Georgia"),
+    url("/fonts/Georgia.ttf") format("ttf");
+}
+
 body {
     /*background-image: url("/images/background.png");*/
     background-color: #3BA6DB;
@@ -32,10 +40,10 @@ body {
 
 .header-info__quote .header-info__quote-text {
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.1em;
     line-height: 1.5em;
     font-style: italic;
-    font-family: cursive;
+    font-family: cursive, sans-serif;
 }
 
 .header-info .header-info__menu {
@@ -70,9 +78,10 @@ body {
 
 .snippet .content__snippet-text {
     font-size: 1.1em;
+    font-weight: 600;
     line-height: 1.3em;
     letter-spacing: -1px;
-    font-family: Serif;
+    font-family: Serif, sans-serif;
 }
 
 .content__snippet-text .content__snippet-text_tag-color {
@@ -82,13 +91,14 @@ body {
 .content .content__snippet-aside {
     margin: .5em;
     padding: .5em;
+    text-indent: 1em;
     box-shadow: inset 5px 0 5px -5px #29627e;
 }
 
 .content__snippet-aside .content__snippet-aside-text {
     font-size: 1em;
     font-style: italic;
-    font-family: cursive;
+    font-family: cursive, sans-serif;
     color: #29627e;
 }
 
@@ -100,7 +110,7 @@ body {
 
 .content .content__list-text {
     margin: 0;
-    font-family: Georgia;
+    font-family: Georgia, sans-serif;
 }
 
 .content .content__list-text_title {
@@ -120,7 +130,8 @@ body {
 
 .success-formula .content__formula-text {
     margin: 0;
-    font-family: Georgia;
+    text-transform: capitalize;
+    font-family: Georgia, sans-serif;
 }
 
 .content .content__first-logo {
@@ -141,7 +152,7 @@ body {
     padding: 0 0 5px;
     font-size: 20px;
     text-align: center;
-    font-family: Serif;
+    font-family: Serif, sans-serif;
 }
 
 .footer-info .footer-info__contacts-title {
