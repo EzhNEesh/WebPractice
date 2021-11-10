@@ -1,122 +1,154 @@
 body {
-    #background-image: url("/images/background.png");
+    /*line-height
+    font-family
+    padding к текстам
+    spacing
+    decoration
+    регистр
+    */
+    /*background-image: url("/images/background.png");*/
     background-color: #3BA6DB;
 }
 
-header.Header1 {
+.header-info{
+    margin: 0 0 10px;
     height: 104px;
 }
 
-.Logo {
+.header-info .header-info__logo {
     background-color: #2B4C5C;
     float: left;
     width: 110px;
     height: 104px;
 }
-.Quote {
+
+.quote {
+    margin: 0 3px;
     float: left;
     position: relative;
-    margin: 0px 0px 0px 3px;
+    display: flex;
+
     background-color: #ABDCF5;
     height: 104px;
-    width: 500px;
+    max-width: 500px;
 }
 
-.Quote sup{
-    margin: 0;
-    font-style: italic;
-    font-size: 150%;
-    position: absolute;
+.header-info .header-info__quote {
+    align-items: center;
+}
+
+.header-info__quote .header-info__quote-text {
     text-align: center;
-    top: 50%;
-    transform: translate(0, -50%);
+    font-size: 1.1rem;
+    line-height: 1.5em;
+    font-style: italic;
+    font-family: cursive;
 }
 
-.Menu {
-    float: right;
+.header-info .header-info__menu {
     font-size: 150%;
+    float: right;
 }
 
-.Content {
-    margin: 10px 0px 0px 0px;
+.menu {
+    margin: 0;
+}
+
+.content{
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    #height: 570px;
     background-color: #ABDCF5;
 }
 
-.Pseudographics {
-    #float: left;
-    margin: 0px 0px 0px 0px;
-    flex: 600px;
-    #height: 570px;
-    #width: 450px;
-    background: black;
-    font-size: 10px;
-    color: white;
-}
-
-.Snippet {
-    #float: left;
-    margin: 0px 0px 0px 0px;
+.content .content-item {
+    margin: 0;
+    padding: 5px;
     display: flex;
     flex-direction: row;
     flex: 600px;
     border: solid;
+}
+
+.snippet {
     background: white;
-    #width: 450px;
-    #height: 200px;
 }
 
-.Snippet_Code {
-
+.snippet .content__snippet-text {
+    font-size: 1.1em;
+    line-height: 1.3em;
+    letter-spacing: -1px;
+    font-family: Serif;
 }
 
-.Snippet__Aside {
-    width: 40%;
-    padding-left: .5rem;
-    margin-left: .5rem;
+.content__snippet-text .content__snippet-text_tag-color {
+    color: orange;
+}
+
+.content .content__snippet-aside {
+    margin: .5em;
+    padding: .5em;
     box-shadow: inset 5px 0 5px -5px #29627e;
+}
+
+.content__snippet-aside .content__snippet-aside-text {
+    font-size: 1em;
     font-style: italic;
+    font-family: cursive;
     color: #29627e;
 }
 
-.List {
-    #float: left;
-    margin: 0px 0px 0px 0px;
-    flex: 600px;
-    border: solid;
+.content .list {
+    margin: 0;
+    padding: 5px;
     background: white;
-    #width: 450px;
-    #height: 200px;
 }
 
-.First-Logo {
-    margin: 0px;
-    flex: 600px;
+.content .content__list-text {
+    margin: 0;
+    font-family: Georgia;
 }
 
-.First-Logo__Logo {
+.content .content__list-text_title {
+    text-decoration: underline;
+}
+
+.content__list-text .content__list-text_item{
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+.success-formula {
+    background-color: white;
+    margin: 0;
+    padding: 5px;
+}
+
+.success-formula .content__formula-text {
+    margin: 0;
+    font-family: Georgia;
+}
+
+.content .content__first-logo {
     margin: 3px;
     filter: drop-shadow(3px 3px 4px #4444dd);
 }
 
-.TagColor {
-    color: orange;
-}
-
-.Footer1 {
-    flex-shrink: 0;
+.footer-info {
+    margin: 10px 0 0;
     background-color: #ABDCF5;
-    height: 70px;
 }
 
-.Footer1-text {
+.footer-info .footer-info__contacts {
     font-size: 20px;
     text-align: center;
+    font-family: Serif;
 }
 
-.Footer1-text a {
+.footer-info .footer-info__contacts-title {
+}
+
+.footer-info .footer-info__contacts-item {
     margin: 0px 50px 0px;
 }
