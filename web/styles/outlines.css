@@ -16,7 +16,6 @@ body {
 }
 
 .header-info{
-    posiion: absolute;
     margin: 0 0 10px;
     height: 104px;
 }
