@@ -12,13 +12,23 @@
 </head>
 
 <body>
+<script src="script.js" defer></script>
 <header class="header-info">
-    <div class="header-info__logo"> </div>
-    <div class="header-info__quote quote">
-        <blockquote class="header-info__quote-text">Мужчина не должен никому ничего объяснять. Мужчина либо уже все сказал, либо</blockquote>
+    <div class="header-info__logo-quote">
+        <div class="header-info__logo"> </div>
+        <div class="header-info__quote quote">
+            <blockquote class="header-info__quote-text">Мужчина не должен никому ничего объяснять. Мужчина либо уже все сказал, либо</blockquote>
+        </div>
     </div>
-    <div class="header-info__menu menu">
-        <nav>Menu &equiv;</nav>
+    <div class="menu">
+        <nav class="header-info__menu">
+            Menu &equiv;
+            <div class="menu__submenu">
+                <ul class="menu__menu-item-main"><a href="index.html" class="menu__menu-item_text">Главная</a></ul>
+                <ul class="menu__menu-item-content"><a href="content.html" class="menu__menu-item_text">Контент</a></ul>
+                <ul class="menu__menu-item-TodoList"><a href="TodoList.html" class="menu__menu-item_text">Список дел</a></ul>
+            </div>
+        </nav>
     </div>
 </header>
 <main class="content">
@@ -65,32 +75,52 @@
             <img src="images/logo.png">
         </div>
     </section>
-    <section class="content-item">
+    <section class="content-item content-item__table">
         <div class="content__table">
-            <div class="table-cell content__table-title"><p>Вид</p></div>
-            <div class="table-cell content__table-title"><p>Объём, км<sup>2</sup></p></div>
-            <div class="table-cell content__table-title"><p>%</p></div>
-            <div class="table-cell content__table_odd-row"><p>Ледники, айсберги, постоянный снег</p></div>
-            <div class="table-cell content__table_odd-row"><p>24 000 000</p></div>
-            <div class="table-cell content__table_odd-row"><p>68,7</p></div>
-            <div class="table-cell content__table_even-row"><p>Подземная пресная вода</p></div>
-            <div class="table-cell content__table_even-row"><p>10 500 000</p></div>
-            <div class="table-cell content__table_even-row"><p>30,1</p></div>
-            <div class="table-cell content__table_odd-row"><p>Вечная мерзлота</p></div>
-            <div class="table-cell content__table_odd-row"><p>300 000</p></div>
-            <div class="table-cell content__table_odd-row"><p>0,86</p></div>
-            <div class="table-cell content__table_even-row"><p>Пресные озёра</p></div>
-            <div class="table-cell content__table_even-row"><p>91 000</p></div>
-            <div class="table-cell content__table_even-row"><p>0,26</p></div>
-            <div class="table-cell content__table_odd-row"><p>Пары атмосферы</p></div>
-            <div class="table-cell content__table_odd-row"><p>12 900</p></div>
-            <div class="table-cell content__table_odd-row"><p>0,04</p></div>
-            <div class="table-cell content__table_even-row"><p>Реки</p></div>
-            <div class="table-cell content__table_even-row"><p>2120</p></div>
-            <div class="table-cell content__table_even-row"><p>0,06</p></div>
-            <div class="table-cell content__table-conclusion"><p>Всего</p></div>
-            <div class="table-cell content__table-conclusion"><p>35 000 000</p></div>
-            <div class="table-cell content__table-conclusion"><p>100</p></div>
+            <div class="content__table-head">
+                <div class="content__table-row">
+                    <div class="table-cell"><p>Вид</p></div>
+                    <div class="table-cell"><p>Объём, км<sup>2</sup></p></div>
+                    <div class="table-cell"><p>%</p></div>
+                </div>
+            </div>
+            <div class="content__table-body">
+                <div class="content__table-row">
+                    <div class="table-cell"><p>Ледники, айсберги, постоянный снег</p></div>
+                    <div class="table-cell"><p>24 000 000</p></div>
+                    <div class="table-cell"><p>68,7</p></div>
+                </div>
+                <div class="content__table-row">
+                    <div class="table-cell"><p>Подземная пресная вода</p></div>
+                    <div class="table-cell"><p>10 500 000</p></div>
+                    <div class="table-cell"><p>30,1</p></div>
+                </div>
+                <div class="content__table-row">
+                    <div class="table-cell"><p>Вечная мерзлота</p></div>
+                    <div class="table-cell"><p>300 000</p></div>
+                    <div class="table-cell"><p>0,86</p></div>
+                </div>
+                <div class="content__table-row">
+                    <div class="table-cell"><p>Пресные озёра</p></div>
+                    <div class="table-cell"><p>91 000</p></div>
+                    <div class="table-cell"><p>0,26</p></div>
+                </div>
+                <div class="content__table-row">
+                    <div class="table-cell"><p>Пары атмосферы</p></div>
+                    <div class="table-cell"><p>12 900</p></div>
+                    <div class="table-cell"><p>0,04</p></div>
+                </div>
+                <div class="content__table-row">
+                    <div class="table-cell"><p>Реки</p></div>
+                    <div class="table-cell"><p>2120</p></div>
+                    <div class="table-cell"><p>0,06</p></div>
+                </div>
+                <div class="content__table-row">
+                    <div class="table-cell"><p>Всего</p></div>
+                    <div class="table-cell"><p>35 000 000</p></div>
+                    <div class="table-cell"><p>100</p></div>
+                </div>
+            </div>
         </div>
     </section>
 </main>
@@ -105,11 +135,13 @@
 </div>
 
 <footer class="footer-info">
-    <secetion class="footer-info__add">
+    <section class="footer-info__add">
         <h1>
-            This place for add
+            Page load time in JavaScript
         </h1>
-    </secetion>
+        <h3 id='page-load-time'>Page load time is</h3>
+    </section>
 </footer>
+
 </body>
 </html>
