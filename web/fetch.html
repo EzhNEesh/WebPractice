@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="Description" content="Список дел">
+    <meta name="Description" content="Fetch">
     <meta name="Author" content="Сабитов Искандэр">
     <meta name="Keywords" content="Проекты, контакты">
 
     <link rel="stylesheet" href="styles/outlines.css">
-    <link rel="stylesheet" href="styles/todo.css">
-    <title>Список дел</title>
+    <link rel="stylesheet" href="styles/fetch.css">
+    <title>Fetch</title>
 </head>
 
 <body>
@@ -31,37 +31,16 @@
     </div>
 </header>
 
-<main>
-    <main class="content">
-        <section class="todo-list">
-            <div class="todo-list__form">
-                <form onsubmit="return false" class="todo-list__form">
-                    <input type="text" placeholder="Input your task" class="todo-list__input-text">
-                    <button type="submit" class="todo-list__button">Добавить</button>
-    <!--                <div>-->
-    <!--                    <select name="todo-type">-->
-    <!--                        <option value="all" selected>Все</option>-->
-    <!--                        <option value="active">Активные</option>-->
-    <!--                        <option value="completed">Завершенные</option>-->
-    <!--                    </select>-->
-    <!--                </div>-->
-                </form>
-            </div>
-            <div class="todo-list__task-list">
-                <ul id="todo-list__task-list">
-
-                </ul>
-            </div>
-                    <template id="todo-list__task-item">
-                        <li>
-                            <span></span>
-                            <button onclick="removeTaskItem(this)">-</button>
-                        </li>
-                    </template>
-        </section>
-    </main>
+<main class="content">
+    <section class="content__button-container">
+        <button onclick="loadPhoto()" type="button" class="content__add_button">Load</button>
+        <img src="https://i.gifer.com/Vp3R.gif" class="content__preloader">
+    </section>
+    <section id="img-container" class="content__img-container"></section>
+    <template id="img-item">
+        <img class="content__img">
+    </template>
 </main>
-
 
 <div class="contacts-block">
     <h2 class="contacts-block__contacts-title"><strong>Контакты: </strong></h2>
@@ -83,6 +62,6 @@
 
 
 <script src="script.js" defer></script>
-<script src="todo.js" defer></script>
+<script src="fetch.js" defer></script>
 </body>
 </html>
