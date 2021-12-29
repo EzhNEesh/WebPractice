@@ -20,7 +20,7 @@
         </div>
     </div>
     <div class="menu">
-        <nav class="header-info__menu">
+        <nav class="header-info__menu" onclick="showSubMenu(this)">
             Menu &equiv;
             <div class="menu__submenu">
                 <ul class="menu__menu-item-main"><a href="index.html" class="menu__menu-item_text">Главная</a></ul>
@@ -36,16 +36,9 @@
     <main class="content">
         <section class="todo-list">
             <div class="todo-list__form">
-                <form onsubmit="return false" class="todo-list__form">
-                    <input type="text" placeholder="Input your task" class="todo-list__input-text">
+                <form onsubmit="addTaskItem();return false;" class="todo-list__form">
+                    <input id="textArea" type="text" placeholder="Input your task" class="todo-list__input-text">
                     <button type="submit" class="todo-list__button">Добавить</button>
-    <!--                <div>-->
-    <!--                    <select name="todo-type">-->
-    <!--                        <option value="all" selected>Все</option>-->
-    <!--                        <option value="active">Активные</option>-->
-    <!--                        <option value="completed">Завершенные</option>-->
-    <!--                    </select>-->
-    <!--                </div>-->
                 </form>
             </div>
             <div class="todo-list__task-list">
@@ -55,8 +48,8 @@
             </div>
                     <template id="todo-list__task-item">
                         <li>
-                            <span></span>
                             <button onclick="removeTaskItem(this)">-</button>
+                            <span></span>
                         </li>
                     </template>
         </section>

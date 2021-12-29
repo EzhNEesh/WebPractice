@@ -78,12 +78,12 @@ body {
 }
 
 .menu .menu__submenu {
+    display:none;
     width: 200px;
     z-index: 1000;
     text-align: center;
     background: #ABDCF5;
     border-radius: 25px;
-    display:none;
     position: absolute;
     right: 10px;
     margin: 0;
