@@ -1,22 +1,18 @@
-function loadPhoto() {
+async function loadPhoto() {
     addPreloader()
     let randomID = Math.floor(Math.random() * 5000) + 1
-    fetch('https://jsonplaceholder.typicode.com/photos/' + randomID)
-        .then(res => {
-            if (res.ok) {
-                return res.json()
-            }
-            else {
-                throw Error
-            }
-        })
-        .then(PromiseResult => {
-            addPhoto(PromiseResult)
-        })
-        .catch (()=>{
-            removePreloader()
-            alert('⚠ Что-то пошло не так')
-        })
+    try {
+        let res = await fetch('https://jsonplaceholder.typicode.com/photos/' + randomID)
+        if (res.ok) {
+            let resJSON = await res.json()
+            addPhoto(resJSON['thumbnailUrl'])
+        }
+    } catch (error) {
+        alert('⚠ Что-то пошло не так')
+    }
+    finally {
+        removePreloader()
+    }
 }
 
 function addPreloader () {
@@ -36,17 +32,10 @@ function removePreloader() {
 }
 
 function addPhoto(data) {
-    // let container = document.querySelector('#img-container')
-    // let img = document.createElement("IMG")
-    // img.src = data['thumbnailUrl']
-    // container.append(img)
     let container = document.querySelector('#img-container')
     let temp = document.querySelector('#img-item')
     let img = temp.content.querySelector('img')
-    //let img = document.createElement("IMG")
-    img.src = data['thumbnailUrl']
-    //contItem.append(img)
-    //contItem.appendChild(img)
+    img.src = data
     let cloneCont = temp.content.cloneNode(true)
     container.append(cloneCont)
     removePreloader()

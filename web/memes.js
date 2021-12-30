@@ -10,6 +10,7 @@ $(document).ready(function (){
         centerMode: true,
         speed: 1200,
         lazyLoad: true,
+        dots: true
     });
 });
 

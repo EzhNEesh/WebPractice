@@ -8,17 +8,20 @@
 
 .content__memes .content__meme-item {
     margin: 10px;
+
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 }
 
 .content__meme-item .content__meme-item_img-style {
     box-shadow: 10px 10px 10px gray;
-
+    max-width: 100%;
 }
 
 .slick-list {
+    position: relative;
+    display: block;
     overflow: hidden;
 }
 
@@ -49,4 +52,33 @@
     text-align: center;
     opacity: 0.5;
 
+}
+
+.slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slick-dots li {
+    list-style: none;
+    margin: 7px;
+}
+
+.slick-dots button{
+    font-size: 0;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 100%;
+    background-color: white;
+    border: none;
+}
+
+.slick-dots button:hover{
+    outline: 1px solid #3BA6DB;
+    cursor: pointer;
+}
+
+.slick-active button{
+    background-color: #3BA6DB;
 }
